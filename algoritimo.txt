@@ -1,0 +1,31 @@
+Início 
+
+ inteiro= $num, $Qmax, $Qmin, $chu 
+
+$numx=aleatório  
+
+$Qmax <- $numx + 10; 
+
+$Qmin<- $numx -10; 
+
+Para x de 1 até 20 faça ; 
+
+Escrever (digite seu chute) ler($Chu) 
+
+Se $chu=$numx; 
+
+Escrever (acertou); 
+
+Se não se $chu<=$qmax e $Chu=>qmin; 
+
+Escrever (está quente); 
+
+Se não se $chu>q$max e $Chu<$qmin; 
+
+Escrever (está frio); 
+
+Fim se 
+
+Fim para 
+
+Fim 
