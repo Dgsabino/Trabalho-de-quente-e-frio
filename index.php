@@ -36,7 +36,7 @@ if (isset($_POST)) {
      
     if ($_SESSION['contador'] >= 19 && $check==1) {
         $_SESSION['numero']= rand(0, 100);
-        echo "<p class='perdeu'>voce nao encrontou o equlibrio</p>";
+        echo "<p class='perdeu'>voce nao encrontou o equilibrio</p>";
         $_SESSION['contador'] = 0;
     }
   
@@ -65,7 +65,7 @@ if (isset($_POST)) {
        
     </form>
     <header>
-    <img  class="img"src="img/logo.png" alt="mago de fogo e gelo" width="1325" height="1300">
+    <img  class="img"src="logo/logo.png" alt="mago de fogo e gelo" width="1325" height="1300">
     </header>
 </body>
 
