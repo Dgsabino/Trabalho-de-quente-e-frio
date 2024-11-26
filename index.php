@@ -1,23 +1,17 @@
 <?php
 session_start();
-
 if (isset($_POST)) {
     if (!isset($_SESSION['contador'])) {
         $_SESSION['contador'] = 0;
         $_SESSION['numero']= rand(0, 100);
     }
-
-
-    
+  
     $qmax =  $_SESSION['numero']+ 10;
     $qmin =  $_SESSION['numero'] - 10;
-   
-
     $chu = $_POST["chute"];
 
     if ($chu ==  $_SESSION['numero']) {
-        echo  "<p class='acertou'>voce acertou o numero magico</p>";
-        
+        echo  "<p class='acertou'>voce acertou o numero magico</p>";  
         $check=0;
         $_SESSION['contador'] = 19;
         $_SESSION['contador'] = 0;
@@ -32,8 +26,7 @@ if (isset($_POST)) {
         $check=1;
     }
   $_SESSION['contador']++;
-
-     
+  
     if ($_SESSION['contador'] >= 19 && $check==1) {
         $_SESSION['numero']= rand(0, 100);
         echo "<p class='perdeu'>voce nao encrontou o equilibrio</p>";
